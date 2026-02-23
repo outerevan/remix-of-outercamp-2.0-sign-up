@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 30% 97%;
+    --foreground: 150 20% 15%;
+
+    --card: 40 25% 95%;
+    --card-foreground: 150 20% 15%;
+
+    --popover: 40 30% 97%;
+    --popover-foreground: 150 20% 15%;
+
+    --primary: 152 35% 28%;
+    --primary-foreground: 40 30% 97%;
+
+    --secondary: 35 30% 88%;
+    --secondary-foreground: 150 20% 15%;
+
+    --muted: 40 20% 92%;
+    --muted-foreground: 150 10% 45%;
+
+    --accent: 35 50% 72%;
+    --accent-foreground: 150 20% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 40 20% 88%;
+    --input: 40 20% 88%;
+    --ring: 152 35% 28%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Custom tokens */
+    --forest: 152 35% 28%;
+    --forest-light: 152 25% 42%;
+    --sand: 35 30% 88%;
+    --sand-light: 40 30% 97%;
+    --warm: 35 50% 72%;
+    --earth: 25 25% 35%;
+  }
+
+  .dark {
+    --background: 150 20% 8%;
+    --foreground: 40 30% 95%;
+    --card: 150 20% 12%;
+    --card-foreground: 40 30% 95%;
+    --popover: 150 20% 8%;
+    --popover-foreground: 40 30% 95%;
+    --primary: 152 35% 55%;
+    --primary-foreground: 150 20% 8%;
+    --secondary: 150 15% 18%;
+    --secondary-foreground: 40 30% 95%;
+    --muted: 150 15% 18%;
+    --muted-foreground: 40 15% 65%;
+    --accent: 35 40% 55%;
+    --accent-foreground: 150 20% 8%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 150 15% 20%;
+    --input: 150 15% 20%;
+    --ring: 152 35% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+  }
+}
