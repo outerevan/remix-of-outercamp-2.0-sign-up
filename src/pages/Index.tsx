@@ -225,12 +225,16 @@ Opening 2026.
 Forty-six days later, 15,800 people were walking with us.
               </p>
               <p>Along the way, our community unlocked our comforts:</p>
-              <p className="text-foreground font-light leading-loose">Shoes.
-Coffee.
-Fire.
-Showers.
-Hot food. 
-Swimming holes.<br />
+              <p className="text-foreground font-light leading-loose">Shoes. 
+Coffee. 
+Fire. 
+Showers. 
+Hot food.  
+Swimming holes.
+
+
+
+                <br />
                 Coffee.<br />
                 Swimming holes.<br />
                 Hot food. Showers.<br />
@@ -254,13 +258,9 @@ Swimming holes.<br />
       {/* ─── SECTION 3: DREAM OUTCOME ─── */}
       <section className="py-24 md:py-32 bg-secondary">
         <div className="container mx-auto px-6 max-w-3xl">
-          <motion.div initial="hidden" whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}>
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }}>
 
-            <motion.h2
-              custom={0}
-              variants={fadeUp}
-              className="font-serif text-4xl md:text-5xl font-light text-foreground mb-6 text-center">
+            <motion.h2 custom={0} variants={fadeUp} className="font-serif text-4xl md:text-5xl font-light text-foreground mb-6 text-center">
 
               What Is Outercamp 2.0 Really About?
             </motion.h2>
