@@ -164,7 +164,7 @@ const Index = () => {
             animate="visible"
             custom={1}
             variants={fadeUp}
-            className="font-sans text-lg md:text-xl text-sand/90 max-w-2xl mx-auto mb-4 leading-relaxed font-light">Founding access to our expanded Blue Ridge mountain retreat — opening 2026. Limited capacity.
+            className="font-sans text-lg md:text-xl text-sand/90 max-w-2xl mx-auto mb-4 leading-relaxed font-light">Founding access to our expanded Blue Ridge mountain retreat space. Opening 2026. Limited capacity.
 
 
           </motion.h2>
@@ -225,8 +225,12 @@ const Index = () => {
 Forty-six days later, 15,800 people were walking with us.
               </p>
               <p>Along the way, our community unlocked our comforts:</p>
-              <p className="text-foreground font-light leading-loose">
-                Shoes.<br />
+              <p className="text-foreground font-light leading-loose">Shoes.
+Coffee.
+Fire.
+Showers.
+Hot food. 
+Swimming holes.<br />
                 Coffee.<br />
                 Swimming holes.<br />
                 Hot food. Showers.<br />
@@ -238,9 +242,7 @@ Forty-six days later, 15,800 people were walking with us.
             </motion.div>
 
             <motion.div custom={2} variants={fadeUp} className="mt-12 text-center">
-              <a
-                href="#hero"
-                className="inline-block px-8 py-4 border border-primary text-primary font-sans text-sm tracking-widest uppercase hover:bg-primary hover:text-primary-foreground transition-colors duration-300">
+              <a href="#hero" className="inline-block px-8 py-4 border border-primary text-primary font-sans text-sm tracking-widest uppercase hover:bg-primary hover:text-primary-foreground transition-colors duration-300">
 
                 Join the Founding Waitlist
               </a>
@@ -252,10 +254,8 @@ Forty-six days later, 15,800 people were walking with us.
       {/* ─── SECTION 3: DREAM OUTCOME ─── */}
       <section className="py-24 md:py-32 bg-secondary">
         <div className="container mx-auto px-6 max-w-3xl">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}>
+          <motion.div initial="hidden" whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}>
 
             <motion.h2
               custom={0}
