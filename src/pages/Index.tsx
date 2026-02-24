@@ -467,8 +467,8 @@ Being with the people we love.
 
           <div className="border-t border-sand/15 pt-6 mt-6 space-y-2">
             <p className="font-sans text-sand/50 text-sm">Not Ready to Wait?</p>
-            <p className="font-sans text-sand/60 text-sm">
-              Our glamping yurts and dome are open now in the Blue Ridge Mountains.
+            <p className="font-sans text-sand/60 text-sm">Our glamping yurts and domes are open now in the Blue Ridge Mountains.
+
             </p>
             <a
               href="https://outercamp.staydirectly.com/"
