@@ -42,7 +42,7 @@ const benefits = [
 "First access to book before public launch",
 "Founding member pricing",
 "Early access to gatherings and retreat dates",
-"Invites to founding member sauna socials",
+"Invites to founder sauna socials",
 "Priority notification if crowdfunding opportunities open"];
 
 
