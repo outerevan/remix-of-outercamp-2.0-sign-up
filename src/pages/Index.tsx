@@ -164,9 +164,9 @@ const Index = () => {
             animate="visible"
             custom={1}
             variants={fadeUp}
-            className="font-sans text-lg md:text-xl text-sand/90 max-w-2xl mx-auto mb-4 leading-relaxed font-light">
+            className="font-sans text-lg md:text-xl text-sand/90 max-w-2xl mx-auto mb-4 leading-relaxed font-light">Founding access to our expanded Blue Ridge mountain retreat — opening 2026. Limited capacity.
 
-            Founding access to our expanded Blue Ridge mountain retreat — opening 2026. Limited capacity.
+
           </motion.h2>
           <motion.p
             initial="hidden"
@@ -287,8 +287,8 @@ Forty-six days later, 15,800 people were walking with us.
                   <span>Space to reset in nature</span>
                 </li>
               </ul>
-              <p className="text-foreground font-light leading-loose">Slower mornings. Cold water. Real fire. Shared meals. Time outside. 
-Being with the people we love.
+              <p className="text-foreground font-light leading-loose">Slower mornings. Cold water. Real fire. Shared meals. Time outside.  Being with the people we love.
+
 
 
                 <br />
