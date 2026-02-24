@@ -221,7 +221,7 @@ Opening 2026.
               <p>In the fall of 2025, we walked 900 miles across North Carolina — starting barefoot — from Outercamp to the Outer Banks on the Mountains to Sea Trail.
 
               </p>
-              <p>We began with 1,000 followers.
+              <p>We began with 1,000 followers. 
 Forty-six days later, 15,800 people were walking with us.
               </p>
               <p>Along the way, our community unlocked our comforts:</p>
