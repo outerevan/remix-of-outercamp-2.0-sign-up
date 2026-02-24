@@ -396,7 +396,7 @@ Forty-six days later, 15,800 people were walking with us.
               )}
             </motion.ul>
             <motion.div custom={2} variants={fadeUp} className="space-y-3 mb-10">
-              <p className="font-sans text-foreground text-lg text-center">
+              <p className="font-sans text-foreground text-center text-base">
                 Once founding capacity is reached, booking opens publicly at standard rates.
               </p>
               <p className="font-sans text-foreground font-semibold text-lg text-center">
