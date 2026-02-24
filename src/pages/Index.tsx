@@ -218,8 +218,8 @@ const Index = () => {
               variants={fadeUp}
               className="font-sans text-muted-foreground leading-relaxed space-y-5 text-lg max-w-3xl mx-auto">
 
-              <p>
-                In 2025, we walked 900 miles across North Carolina — starting barefoot — from Outercamp to the Outer Banks on the Mountains to Sea Trail.
+              <p>In the fall of 2025, we walked 900 miles across North Carolina — starting barefoot — from Outercamp to the Outer Banks on the Mountains to Sea Trail.
+
               </p>
               <p>We began with 1,000 followers.
 Forty-six days later, 15,800 people were walking with us.
