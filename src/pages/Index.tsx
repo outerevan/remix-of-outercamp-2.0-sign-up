@@ -289,7 +289,7 @@ const Index = () => {
               <p className="font-serif text-3xl md:text-4xl text-foreground font-light leading-snug">
                 This is not a resort.
               </p>
-              <p className="font-serif text-3xl md:text-4xl text-primary font-medium mt-2 italic">
+              <p className="font-serif text-3xl md:text-4xl text-clay font-medium mt-2 italic">
                 It's a ritual.
               </p>
             </motion.div>
@@ -374,7 +374,7 @@ const Index = () => {
                 key={b}
                 className="font-sans text-foreground flex items-start gap-3 text-lg">
 
-                  <span className="text-primary">✔</span>
+                  <span className="text-clay">✔</span>
                   <span>{b}</span>
                 </li>
               )}
