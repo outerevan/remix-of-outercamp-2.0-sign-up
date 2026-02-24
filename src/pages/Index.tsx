@@ -29,11 +29,11 @@ const features = [
 {
   icon: Droplets,
   title: "Bath House",
-  desc: "Communal spa with sauna, hot tub, cold plunge, and outdoor showers"
+  desc: "Communal spa space with sauna, hot tub, and outdoor showers"
 },
 {
   icon: Flame,
-  title: "Hike → Plunge → Sauna Reset Circuit",
+  title: "Hike → Plunge → Sauna Circuit",
   desc: "Fire. Trail. Waterfall. Heat. Repeat."
 }];
 
@@ -42,7 +42,6 @@ const benefits = [
 "First access to book before public launch",
 "Founding member pricing",
 "Early access to gatherings and retreat dates",
-"Invites to founding member sauna socials",
 "Priority notification if crowdfunding opportunities open"];
 
 
@@ -128,7 +127,7 @@ const WaitlistForm = ({
         variant === "dark" ? "text-sand/50" : "text-muted-foreground"}`
         }>
 
-        Limited capacity. This list will be notified first.
+        Founding rates and early booking windows will be released to this list before public launch.
       </p>
     </form>);
 
@@ -165,7 +164,8 @@ const Index = () => {
             animate="visible"
             custom={1}
             variants={fadeUp}
-            className="font-sans text-lg md:text-xl text-sand/90 max-w-2xl mx-auto mb-4 leading-relaxed font-light">Founding access to our expanded Blue Ridge Mountain retreat space— Opening 2026.
+            className="font-sans text-lg md:text-xl text-sand/90 max-w-2xl mx-auto mb-4 leading-relaxed font-light">Founding access to our expanded Blue Ridge Mountain retreat space.
+Opening 2026.
 
           </motion.h2>
           <motion.p
@@ -199,45 +199,51 @@ const Index = () => {
             <motion.h2
               custom={0}
               variants={fadeUp}
-              className="md:text-5xl text-foreground mb-10 text-center font-sans font-normal text-3xl">
+              className="text-foreground mb-10 text-center font-sans font-normal text-3xl md:text-4xl">
 
               2 Brothers. 900 Miles. Built by the Trail.
             </motion.h2>
 
-            <div className="flex flex-col md:flex-row md:items-start md:gap-10">
-              <motion.div custom={0.5} variants={fadeUp} className="mb-10 md:mb-0 md:w-1/2 md:flex-shrink-0">
-                <figure>
-                  <img
-                    src={trailImage}
-                    alt="Ascending Dobson Knob before a storm in Pisgah National Forest"
-                    className="w-full rounded-sm object-cover aspect-[4/3] md:aspect-auto"
-                    loading="lazy" />
-                  <figcaption className="mt-3 font-sans text-xs text-muted-foreground italic tracking-wide">
-                    Day 3. Ascending Dobson Knob before a storm. Pisgah National Forest.
-                  </figcaption>
-                </figure>
-              </motion.div>
+            <motion.div custom={0.5} variants={fadeUp} className="mb-10">
+              <img
+                src={trailImage}
+                alt="Brother on the Mountains to Sea Trail with backpack"
+                className="w-full max-w-2xl mx-auto rounded-sm object-cover aspect-[4/3]"
+                loading="lazy" />
 
-              <motion.div
-                custom={1}
-                variants={fadeUp}
-                className="font-sans text-muted-foreground leading-relaxed space-y-5 text-lg md:w-1/2">
+            </motion.div>
 
-                <p>In the fall of 2025, we walked 900 miles across North Carolina — starting barefoot — from Outercamp to the Outer Banks on the Mountains to Sea Trail.</p>
-                <p>We began with 1,000 followers. Forty-six days later, 15,800 people were walking with us.</p>
-                <p>Along the way, our community unlocked our comforts:</p>
-                <p className="text-foreground font-light leading-loose">
-                  Shoes.<br />
-                  Coffee.<br />
-                  Swimming holes.<br />
-                  Hot food. Showers.<br />
-                  Fire.
-                </p>
-                <p className="font-medium text-foreground">
-                  That journey now guides Outercamp 2.0.
-                </p>
-              </motion.div>
-            </div>
+            <motion.div
+              custom={1}
+              variants={fadeUp}
+              className="font-sans text-muted-foreground leading-relaxed space-y-5 text-lg max-w-3xl mx-auto">
+
+              <p>In the fall of 2025, we walked 900 miles across North Carolina — starting barefoot — from Outercamp to the Outer Banks on the Mountains to Sea Trail.
+
+              </p>
+              <p>We began with 1,000 followers. 
+Forty-six days later, 15,800 people were walking with us.
+              </p>
+              <p>Along the way, our community unlocked our comforts:</p>
+              <p className="text-foreground font-light leading-loose">Shoes.
+Coffee.
+Fire.
+Showers.
+Hot food.
+Swimming holes.
+
+
+
+                <br />
+                Coffee.<br />
+                Swimming holes.<br />
+                Hot food. Showers.<br />
+                Fire.
+              </p>
+              <p className="font-medium text-foreground">
+                That journey now guides Outercamp 2.0.
+              </p>
+            </motion.div>
 
             <motion.div custom={2} variants={fadeUp} className="mt-12 text-center">
               <a href="#hero" className="inline-block px-8 py-4 border border-primary text-primary font-sans text-sm tracking-widest uppercase hover:bg-primary hover:text-primary-foreground transition-colors duration-300">
@@ -281,8 +287,17 @@ const Index = () => {
                   <span>Space to reset in nature</span>
                 </li>
               </ul>
-              <p className="text-foreground font-light">
-                Slower mornings. &nbsp;Cold water. &nbsp;Real fire. &nbsp;Shared meals. &nbsp;Time outside.
+              <p className="text-foreground font-light leading-loose">Slower mornings.
+Cold water.
+Real fire.
+Shared meals.
+Time outside.
+Being with the people we love.<br />
+                Cold water.<br />
+                Real fire.<br />
+                Shared meals.<br />
+                Time outside.<br />
+                Being with the people we love.
               </p>
             </motion.div>
             <motion.div custom={2} variants={fadeUp} className="mt-12 text-center">
@@ -290,7 +305,7 @@ const Index = () => {
               <p className="font-serif text-3xl md:text-4xl text-foreground font-light leading-snug">
                 This is not a resort.
               </p>
-              <p className="font-serif text-3xl md:text-4xl text-clay font-medium mt-2 italic">
+              <p className="font-serif text-3xl md:text-4xl text-primary font-medium mt-2 italic">
                 It's a ritual.
               </p>
             </motion.div>
@@ -375,7 +390,7 @@ const Index = () => {
                 key={b}
                 className="font-sans text-foreground flex items-start gap-3 text-lg">
 
-                  <span className="text-clay">✔</span>
+                  <span className="text-primary">✔</span>
                   <span>{b}</span>
                 </li>
               )}
@@ -423,7 +438,7 @@ const Index = () => {
               variants={fadeUp}
               className="font-sans text-sand/80 mb-10 leading-relaxed">
 
-              Opening 2026. Limited access.
+              Opening 2026. Limited founding access.
             </motion.p>
             <motion.div custom={2} variants={fadeUp}>
               <WaitlistForm variant="dark" />
