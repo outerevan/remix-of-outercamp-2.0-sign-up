@@ -128,7 +128,7 @@ const WaitlistForm = ({
         variant === "dark" ? "text-sand/50" : "text-muted-foreground"}`
         }>
 
-        Limited capacity. You will be notified first.
+        Limited capacity. This list will be notified first.
       </p>
     </form>);
 
