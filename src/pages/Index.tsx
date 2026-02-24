@@ -225,11 +225,11 @@ Opening 2026.
 Forty-six days later, 15,800 people were walking with us.
               </p>
               <p>Along the way, our community unlocked our comforts:</p>
-              <p className="text-foreground font-light leading-loose">Shoes. 
-Coffee. 
-Fire. 
-Showers. 
-Hot food.  
+              <p className="text-foreground font-light leading-loose">Shoes.
+Coffee.
+Fire.
+Showers.
+Hot food.
 Swimming holes.
 
 
