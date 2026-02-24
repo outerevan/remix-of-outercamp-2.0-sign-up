@@ -164,7 +164,7 @@ const Index = () => {
             animate="visible"
             custom={1}
             variants={fadeUp}
-            className="font-sans text-lg md:text-xl text-sand/90 max-w-2xl mx-auto mb-4 leading-relaxed font-light">Founding access to our expanded Blue Ridge mountain retreat space. Opening 2026. Limited capacity.
+            className="font-sans text-lg md:text-xl text-sand/90 max-w-2xl mx-auto mb-4 leading-relaxed font-light">Founding access to our expanded Blue Ridge Mountain retreat space. Opening 2026. Limited capacity.
 
 
           </motion.h2>
@@ -199,7 +199,7 @@ const Index = () => {
             <motion.h2
               custom={0}
               variants={fadeUp}
-              className="font-serif text-4xl md:text-5xl font-light text-foreground mb-10 text-center">
+              className="text-4xl md:text-5xl text-foreground mb-10 text-center font-sans font-normal">
 
               2 Brothers. 900 Miles. Built by the Trail.
             </motion.h2>
