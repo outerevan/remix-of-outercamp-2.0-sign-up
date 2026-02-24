@@ -206,11 +206,16 @@ const Index = () => {
 
             <div className="flex flex-col md:flex-row md:items-start md:gap-10">
               <motion.div custom={0.5} variants={fadeUp} className="mb-10 md:mb-0 md:w-1/2 md:flex-shrink-0">
-                <img
-                  src={trailImage}
-                  alt="Brother on the Mountains to Sea Trail with backpack"
-                  className="w-full rounded-sm object-cover aspect-[4/3]"
-                  loading="lazy" />
+                <figure>
+                  <img
+                    src={trailImage}
+                    alt="Ascending Dobson Knob before a storm in Pisgah National Forest"
+                    className="w-full rounded-sm object-cover aspect-[4/3] md:aspect-auto"
+                    loading="lazy" />
+                  <figcaption className="mt-3 font-sans text-xs text-muted-foreground italic tracking-wide">
+                    Day 3. Ascending Dobson Knob before a storm. Pisgah National Forest.
+                  </figcaption>
+                </figure>
               </motion.div>
 
               <motion.div
