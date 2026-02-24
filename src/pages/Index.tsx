@@ -199,7 +199,7 @@ Opening 2026.
             <motion.h2
               custom={0}
               variants={fadeUp}
-              className="text-4xl md:text-5xl text-foreground mb-10 text-center font-sans font-normal">
+              className="md:text-5xl text-foreground mb-10 text-center font-sans font-normal text-3xl">
 
               2 Brothers. 900 Miles. Built by the Trail.
             </motion.h2>
