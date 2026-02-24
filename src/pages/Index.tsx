@@ -287,11 +287,12 @@ Swimming holes.
                   <span>Space to reset in nature</span>
                 </li>
               </ul>
-              <p className="text-foreground font-light leading-loose">Slower mornings. Cold water. Real fire. Shared meals. Time outside.  Being with the people we love.
-
-
-
-                <br />
+              <p className="text-foreground font-light leading-loose">Slower mornings.
+Cold water.
+Real fire.
+Shared meals.
+Time outside.
+Being with the people we love.<br />
                 Cold water.<br />
                 Real fire.<br />
                 Shared meals.<br />
@@ -315,11 +316,10 @@ Swimming holes.
       {/* ─── SECTION 4: WHAT'S COMING ─── */}
       <section className="py-24 md:py-32 bg-background">
         <div className="container mx-auto px-6">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            className="text-center mb-16">
+          <motion.div initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          className="text-center mb-16">
 
             <motion.h2
               custom={0}
