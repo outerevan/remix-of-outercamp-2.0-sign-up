@@ -384,7 +384,7 @@ const Index = () => {
               <p className="font-sans text-foreground text-center text-base">
                 Once founding capacity is reached, booking opens publicly at standard rates.
               </p>
-              <p className="font-sans text-foreground font-semibold text-lg text-center">
+              <p className="font-sans text-foreground font-semibold text-base text-center">
                 This list determines who gets first access.
               </p>
             </motion.div>
