@@ -155,7 +155,7 @@ const Index = () => {
             animate="visible"
             custom={0}
             variants={fadeUp}
-            className="font-serif text-5xl md:text-7xl font-light text-sand-light leading-[1.1] mb-6">
+            className="font-serif text-5xl md:text-7xl text-sand-light leading-[1.1] mb-6 font-medium">
 
             Be First to Experience Outercamp 2.0
           </motion.h1>
