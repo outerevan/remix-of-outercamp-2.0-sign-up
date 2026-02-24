@@ -281,12 +281,8 @@ const Index = () => {
                   <span>Space to reset in nature</span>
                 </li>
               </ul>
-              <p className="text-foreground font-light leading-loose">
-                Slower mornings.<br />
-                Cold water.<br />
-                Real fire.<br />
-                Shared meals.<br />
-                Time outside.
+              <p className="text-foreground font-light">
+                Slower mornings. &nbsp;Cold water. &nbsp;Real fire. &nbsp;Shared meals. &nbsp;Time outside.
               </p>
             </motion.div>
             <motion.div custom={2} variants={fadeUp} className="mt-12 text-center">
