@@ -199,7 +199,7 @@ const Index = () => {
             <motion.h2
               custom={0}
               variants={fadeUp}
-              className="md:text-5xl text-foreground mb-10 text-center font-sans font-normal text-3xl">
+              className="text-foreground mb-10 text-center font-sans font-normal text-3xl md:text-4xl">
 
               2 Brothers. 900 Miles. Built by the Trail.
             </motion.h2>
