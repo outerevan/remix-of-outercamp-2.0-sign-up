@@ -1,6 +1,6 @@
-import { useState } from "react";
 import { motion, type Easing } from "framer-motion";
 import { Tent, Home, Droplets, Flame, Instagram } from "lucide-react";
+import { WaitlistForm } from "@/components/WaitlistForm";
 import heroImage from "@/assets/hero-resort.jpg";
 import trailImage from "@/assets/trail.jpg";
 
@@ -46,94 +46,6 @@ const benefits = [
 "Priority notification if crowdfunding opportunities open"];
 
 
-/* ── Reusable form component ── */
-const WaitlistForm = ({
-  variant = "light"
-}: {variant?: "light" | "dark";}) => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (name.trim() && email.trim()) {
-      setSubmitted(true);
-      setName("");
-      setEmail("");
-    }
-  };
-
-  if (submitted) {
-    return (
-      <motion.div
-        initial={{ opacity: 0, scale: 0.95 }}
-        animate={{ opacity: 1, scale: 1 }}
-        className={`p-8 rounded-lg border ${
-        variant === "dark" ?
-        "border-sand/20 bg-foreground/80" :
-        "border-border bg-background"}`
-        }>
-
-        <p
-          className={`font-serif text-2xl mb-2 ${
-          variant === "dark" ? "text-sand-light" : "text-foreground"}`
-          }>
-
-          You're on the list
-        </p>
-        <p
-          className={`text-sm ${
-          variant === "dark" ? "text-sand/70" : "text-muted-foreground"}`
-          }>
-
-          Founding rates and early booking windows are coming your way.
-        </p>
-      </motion.div>);
-
-  }
-
-  const inputClass =
-  variant === "dark" ?
-  "w-full px-5 py-4 bg-foreground/60 border border-sand/20 text-sand-light font-sans text-sm placeholder:text-sand/40 focus:outline-none focus:ring-2 focus:ring-primary transition-shadow" :
-  "w-full px-5 py-4 bg-background border border-border text-foreground font-sans text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow";
-
-  return (
-    <form onSubmit={handleSubmit} className="space-y-3 max-w-md mx-auto">
-      <input
-        type="text"
-        required
-        maxLength={100}
-        placeholder="First Name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        className={inputClass} />
-
-      <input
-        type="email"
-        required
-        maxLength={255}
-        placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        className={inputClass} />
-
-      <button
-        type="submit"
-        className="w-full px-8 py-4 bg-primary text-primary-foreground font-sans text-sm tracking-widest uppercase hover:bg-forest-light transition-colors duration-300">
-
-        🔓 Unlock Founding Access
-      </button>
-      <p
-        className={`text-xs text-center ${
-        variant === "dark" ? "text-sand/50" : "text-muted-foreground"}`
-        }>
-
-        Limited capacity. This list will be notified first.
-      </p>
-    </form>);
-
-};
-
 /* ── Page ── */
 const Index = () => {
   return (
@@ -150,7 +62,7 @@ const Index = () => {
           <div className="absolute inset-0 bg-foreground/55" />
         </div>
 
-        <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
+        <div className="relative z-10 text-center px-6 pt-20 max-w-3xl mx-auto">
           <motion.h1
             initial="hidden"
             animate="visible"
