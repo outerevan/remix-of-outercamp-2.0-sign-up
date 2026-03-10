@@ -223,17 +223,17 @@ const Index = () => {
                 variants={fadeUp}
                 className="font-sans text-muted-foreground leading-relaxed space-y-5 text-lg md:w-1/2">
 
-                <p>In the fall of 2025, we walked 900 miles across North Carolina — starting barefoot — from Outercamp to the Outer Banks on the Mountains to Sea Trail.</p>
-                <p>We began with 1,000 followers. Forty-six days later, 15,800 people were walking with us.</p>
-                <p>Along the way, our community unlocked our comforts:</p>
-                <p className="text-foreground font-light leading-loose">
+                <p className="text-base">In the fall of 2025, we walked 900 miles across North Carolina — starting barefoot — from Outercamp to the Outer Banks on the Mountains to Sea Trail.</p>
+                <p className="text-base">We began with 1,000 followers. Forty-six days later, 15,800 people were walking with us.</p>
+                <p className="text-base">Along the way, our community unlocked our comforts:</p>
+                <p className="text-foreground font-light leading-loose text-base">
                   Shoes.<br />
                   Coffee.<br />
                   Swimming holes.<br />
                   Hot food. Showers.<br />
                   Fire.
                 </p>
-                <p className="font-medium text-foreground">
+                <p className="font-medium text-foreground text-xl">
                   That journey now guides Outercamp 2.0.
                 </p>
               </motion.div>
