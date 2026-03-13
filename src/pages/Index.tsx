@@ -51,7 +51,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* ─── SECTION 1: HERO ─── */}
-      <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section id="hero" className="relative min-h-[100svh] flex items-start md:items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img
             src={heroImage}
@@ -62,7 +62,7 @@ const Index = () => {
           <div className="absolute inset-0 bg-foreground/55" />
         </div>
 
-        <div className="relative z-10 text-center px-6 pt-20 max-w-3xl mx-auto">
+        <div className="relative z-10 text-center px-6 pt-[4.25rem] md:pt-20 max-w-3xl mx-auto">
           <motion.h1
             initial="hidden"
             animate="visible"
@@ -85,7 +85,7 @@ const Index = () => {
             animate="visible"
             custom={1.5}
             variants={fadeUp}
-            className="font-sans text-base text-sand/60 max-w-xl mx-auto mb-10 italic">
+            className="font-sans text-base text-sand/60 max-w-xl mx-auto mb-6 md:mb-10 italic">
 
             Life at walking pace. Comforts that count. Built with intention.
           </motion.p>
