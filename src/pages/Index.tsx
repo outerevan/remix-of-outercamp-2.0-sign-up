@@ -62,7 +62,7 @@ const Index = () => {
           <div className="absolute inset-0 bg-foreground/55" />
         </div>
 
-        <div className="relative z-10 text-center px-6 pt-[4.25rem] md:pt-20 max-w-3xl mx-auto">
+        <div className="relative z-10 text-center px-6 pt-[4.75rem] md:pt-20 max-w-3xl mx-auto">
           <motion.h1
             initial="hidden"
             animate="visible"
