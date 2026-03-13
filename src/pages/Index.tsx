@@ -287,7 +287,7 @@ const Index = () => {
                 key={b}
                 className="font-sans text-foreground flex items-start gap-3 text-lg">
 
-                  <span className="text-clay">✔</span>
+                  <span className="text-clay">✔︎</span>
                   <span>{b}</span>
                 </li>
               )}
