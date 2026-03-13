@@ -116,13 +116,13 @@ const Index = () => {
               2 Brothers. 900 Miles. Built by the Trail.
             </motion.h2>
 
-            <div className="flex flex-col md:flex-row md:items-start md:gap-10">
+            <div className="flex flex-col md:flex-row md:items-center md:gap-10">
               <motion.div custom={0.5} variants={fadeUp} className="mb-10 md:mb-0 md:w-1/2 md:flex-shrink-0">
                 <figure>
                   <img
                     src={trailImage}
                     alt="Ascending Dobson Knob before a storm in Pisgah National Forest"
-                    className="w-full rounded-sm object-cover aspect-[4/3] md:aspect-auto"
+                    className="w-full rounded-sm object-cover aspect-[3/4]"
                     loading="lazy" />
                   <figcaption className="mt-3 font-sans text-xs text-muted-foreground italic tracking-wide">
                     Day 3. Ascending Dobson Knob before a storm. Pisgah National Forest.
