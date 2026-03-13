@@ -301,8 +301,7 @@ export const WaitlistForm = ({
           type="submit"
           className="w-full px-8 py-4 rounded-lg bg-primary text-primary-foreground font-sans text-sm tracking-widest uppercase hover:bg-forest-light transition-colors duration-300 flex items-center justify-center gap-2"
         >
-          Continue
-          <ChevronRight className="w-4 h-4" />
+          🔓 UNLOCK FOUNDING ACCESS
         </button>
         <p
           className={`text-xs text-center ${
