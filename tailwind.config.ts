@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         serif: ['"Canela"', '"Cormorant Garamond"', 'serif'],
         sans: ['"DM Sans"', 'sans-serif'],
+        handwritten: ['"Biro Mixed"', 'cursive'],
       },
       colors: {
         forest: {

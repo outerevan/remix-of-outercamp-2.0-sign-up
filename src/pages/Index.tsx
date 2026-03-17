@@ -19,22 +19,26 @@ const features = [
 {
   icon: Tent,
   title: "New Glamping Sites",
-  desc: "More private, immersive stays"
+  desc: "More private, immersive stays in nature",
+  iconColor: "text-primary"
 },
 {
   icon: Home,
   title: "Earth Studios",
-  desc: "Grounded, design-forward dwellings built into the mountain"
+  desc: "Grounded, design-forward dwellings built into the mountain",
+  iconColor: "text-primary"
 },
 {
   icon: Droplets,
   title: "Bath House",
-  desc: "Communal spa with sauna, hot tub, cold plunge, and outdoor showers"
+  desc: "Communal spa with sauna, hot tub, cold plunge, and outdoor showers",
+  iconColor: "text-primary"
 },
 {
   icon: Flame,
   title: "Hike → Plunge → Sauna\nReset Circuit",
-  desc: "Fire. Trail. Waterfall. Heat. Repeat."
+  desc: "Fire. Trail. Waterfall. Heat. Repeat.",
+  iconColor: "text-clay"
 }];
 
 
@@ -42,8 +46,8 @@ const benefits = [
 "First access to book before public launch",
 "Founding member pricing",
 "Early access to gatherings and retreat dates",
-"Invites to founder sauna socials",
-"Priority notification if crowdfunding opportunities open"];
+"Invites to Founders' Sauna Socials",
+"Priority notifications if community investment opens up"];
 
 
 /* ── Page ── */
@@ -62,13 +66,13 @@ const Index = () => {
           <div className="absolute inset-0 bg-foreground/55" />
         </div>
 
-        <div className="relative z-10 text-center px-6 pt-[4.75rem] md:pt-20 max-w-3xl mx-auto">
+        <div className="relative z-10 text-center px-6 pt-[6.5rem] md:pt-20 max-w-3xl mx-auto">
           <motion.h1
             initial="hidden"
             animate="visible"
             custom={0}
             variants={fadeUp}
-            className="font-serif text-4xl md:text-6xl text-sand-light leading-[1.1] mb-6 font-medium">
+            className="font-serif text-[45px] md:text-[4rem] text-sand-light leading-[1.1] mb-6 font-medium">
 
             Be First to Experience Outercamp 2.0
           </motion.h1>
@@ -77,7 +81,7 @@ const Index = () => {
             animate="visible"
             custom={1}
             variants={fadeUp}
-            className="font-sans text-lg md:text-xl text-sand/90 max-w-2xl mx-auto mb-4 leading-relaxed font-light">Founding access to our expanded Blue Ridge Mountain retreat space— Opening 2026.
+            className="font-sans text-lg md:text-xl text-sand/90 max-w-2xl mx-auto mb-4 leading-relaxed font-light">First access and founding rates for our expanded Blue Ridge glamping retreat — opening 2026. Limited capacity.
 
           </motion.h2>
           <motion.p
@@ -87,8 +91,21 @@ const Index = () => {
             variants={fadeUp}
             className="font-sans text-base text-sand/60 max-w-xl mx-auto mb-6 md:mb-10 italic">
 
-            Life at walking pace. Comforts that count. Built with intention.
+            Life at walking pace. Comforts that count.<br />Built with intention.
           </motion.p>
+<motion.div
+            initial="hidden"
+            animate="visible"
+            custom={1.8}
+            variants={fadeUp}
+            className="hidden md:flex items-center justify-center gap-3 font-sans text-xs text-sand/60 tracking-wide mb-3">
+            <span>✓ First booking access</span>
+            <span className="text-sand/30">·</span>
+            <span>✓ Founders' Sauna Socials</span>
+            <span className="text-sand/30">·</span>
+            <span>✓ Founding rates</span>
+          </motion.div>
+
           <motion.div
             initial="hidden"
             animate="visible"
@@ -101,7 +118,7 @@ const Index = () => {
       </section>
 
       {/* ─── SECTION 2: DEMAND & MOVEMENT ─── */}
-      <section className="py-24 md:py-32 bg-background">
+      <section className="pt-[68px] pb-24 md:py-32 bg-background">
         <div className="container mx-auto px-6 max-w-4xl">
           <motion.div
             initial="hidden"
@@ -111,9 +128,9 @@ const Index = () => {
             <motion.h2
               custom={0}
               variants={fadeUp}
-              className="text-foreground mb-10 text-center font-sans font-normal text-3xl md:text-4xl">
+              className="text-foreground mb-10 text-center font-sans font-normal text-[2rem] md:text-[2.5rem]">
 
-              2 Brothers. 900 Miles. Built by the Trail.
+              <span className="font-handwritten">Two Brothers. 900 Miles.</span><br /><span className="font-serif font-light">Built by the Trail.</span>
             </motion.h2>
 
             <div className="flex flex-col md:flex-row md:items-center md:gap-10">
@@ -142,7 +159,8 @@ const Index = () => {
                   Shoes.<br />
                   Coffee.<br />
                   Swimming holes.<br />
-                  Hot food. Showers.<br />
+                  Hot food.<br />
+                  Showers.<br />
                   Fire.
                 </p>
                 <p className="font-medium text-foreground text-xl">
@@ -166,7 +184,7 @@ const Index = () => {
         <div className="container mx-auto px-6 max-w-3xl">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }}>
 
-            <motion.h2 custom={0} variants={fadeUp} className="font-serif text-4xl md:text-5xl font-light text-foreground mb-6 text-center">
+            <motion.h2 custom={0} variants={fadeUp} className="font-serif text-4xl md:text-[2.75rem] font-light text-foreground mb-6 text-center">
 
               What Is Outercamp 2.0 Really About?
             </motion.h2>
@@ -221,7 +239,7 @@ const Index = () => {
             <motion.h2
               custom={0}
               variants={fadeUp}
-              className="font-serif text-4xl md:text-5xl font-light text-foreground">
+              className="font-serif text-4xl md:text-[2.75rem] font-light text-foreground">
 
               What's Coming in 2026
             </motion.h2>
@@ -239,9 +257,9 @@ const Index = () => {
               className="text-center group">
 
                 <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-secondary flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-500">
-                  <f.icon className="w-7 h-7 text-primary group-hover:text-primary-foreground transition-colors duration-500" />
+                  <f.icon className={`w-7 h-7 ${f.iconColor} group-hover:text-primary-foreground transition-colors duration-500`} />
                 </div>
-                <h3 className="font-serif text-xl font-medium text-foreground mb-3">
+                <h3 className="font-serif text-xl font-medium text-foreground mb-3 whitespace-pre-line">
                   {f.title}
                 </h3>
                 <p className="font-sans text-muted-foreground leading-relaxed text-sm">
@@ -259,9 +277,9 @@ const Index = () => {
             variants={fadeUp}
             className="mt-16 text-center font-sans text-foreground leading-loose">
 
-            Built intentionally.<br />
+            <span className="font-handwritten text-lg">Built intentionally.<br />
             Scaled carefully.<br />
-            Limited by design.
+            Limited by design.</span>
           </motion.div>
         </div>
       </section>

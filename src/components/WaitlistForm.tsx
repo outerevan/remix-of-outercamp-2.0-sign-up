@@ -308,7 +308,7 @@ export const WaitlistForm = ({
             isDark ? "text-sand/50" : "text-muted-foreground"
           }`}
         >
-          Limited capacity. This list will be notified first.
+          Founding rates and early booking windows will be released to this list before public launch.
         </p>
       </form>
     );
