@@ -76,10 +76,18 @@ const Index = () => {
             animate="visible"
             custom={0}
             variants={fadeUp}
-            className="font-serif text-[45px] md:text-[4rem] text-sand-light leading-[1.1] mb-6 font-medium">
+            className="font-serif text-[45px] md:text-[4rem] text-sand-light leading-[1.1] mb-3 md:mb-6 font-medium">
 
             Be First to Experience Outercamp 2.0
           </motion.h1>
+          <motion.p
+            initial="hidden"
+            animate="visible"
+            custom={1}
+            variants={fadeUp}
+            className="md:hidden font-sans text-sm text-sand/80 mb-5">
+            Blue Ridge Mountains &mdash; opening 2026
+          </motion.p>
           <motion.h2
             initial="hidden"
             animate="visible"
