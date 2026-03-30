@@ -20,25 +20,29 @@ const features = [
   icon: Tent,
   title: "New Glamping Sites",
   desc: "More private, immersive stays in nature",
-  iconColor: "text-primary"
+  iconColor: "text-primary",
+  hoverBg: "group-hover:bg-primary"
 },
 {
   icon: Home,
   title: "Earth Studios",
   desc: "Grounded, design-forward dwellings built into the mountain",
-  iconColor: "text-primary"
+  iconColor: "text-primary",
+  hoverBg: "group-hover:bg-primary"
 },
 {
   icon: Droplets,
   title: "Bath House",
   desc: "Communal spa with sauna, hot tub, cold plunge, and outdoor showers",
-  iconColor: "text-primary"
+  iconColor: "text-primary",
+  hoverBg: "group-hover:bg-primary"
 },
 {
   icon: Flame,
   title: "Hike → Plunge → Sauna\nReset Circuit",
   desc: "Fire. Trail. Waterfall. Heat. Repeat.",
-  iconColor: "text-clay"
+  iconColor: "text-clay",
+  hoverBg: "group-hover:bg-clay"
 }];
 
 
@@ -66,7 +70,7 @@ const Index = () => {
           <div className="absolute inset-0 bg-foreground/55" />
         </div>
 
-        <div className="relative z-10 text-center px-6 pt-[6.5rem] pb-10 md:pt-20 md:pb-0 max-w-3xl mx-auto">
+        <div className="relative z-10 text-center px-6 pt-[10rem] pb-10 md:pt-20 md:pb-0 max-w-3xl mx-auto">
           <motion.h1
             initial="hidden"
             animate="visible"
@@ -81,7 +85,7 @@ const Index = () => {
             animate="visible"
             custom={1}
             variants={fadeUp}
-            className="font-sans text-lg md:text-xl text-sand/90 max-w-2xl mx-auto mb-4 leading-relaxed font-light">First access and founding rates for our expanded Blue Ridge glamping retreat — opening 2026. Limited capacity.
+            className="hidden md:block font-sans text-lg md:text-xl text-sand/90 max-w-2xl mx-auto mb-4 leading-relaxed font-light">First access and founding rates for our expanded Blue Ridge glamping retreat — opening 2026. Limited capacity.
 
           </motion.h2>
           <motion.p
@@ -256,7 +260,7 @@ const Index = () => {
               variants={fadeUp}
               className="text-center group">
 
-                <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-secondary flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-500">
+                <div className={`w-16 h-16 mx-auto mb-6 rounded-full bg-secondary flex items-center justify-center ${f.hoverBg} group-hover:text-primary-foreground transition-colors duration-500`}>
                   <f.icon className={`w-7 h-7 ${f.iconColor} group-hover:text-primary-foreground transition-colors duration-500`} />
                 </div>
                 <h3 className="font-serif text-xl font-medium text-foreground mb-3 whitespace-pre-line">
@@ -355,7 +359,14 @@ const Index = () => {
 
               Opening 2026. Limited access.
             </motion.p>
-            <motion.div custom={2} variants={fadeUp}>
+            <motion.div custom={2} variants={fadeUp} className="flex items-center justify-center gap-2 font-sans text-[10px] md:text-xs text-sand/60 tracking-wide mb-3 whitespace-nowrap">
+              <span>✓ Early booking</span>
+              <span className="text-sand/30">·</span>
+              <span>✓ Founders' Sauna Socials</span>
+              <span className="text-sand/30">·</span>
+              <span>✓ Founding rates</span>
+            </motion.div>
+            <motion.div custom={3} variants={fadeUp}>
               <WaitlistForm variant="dark" />
             </motion.div>
           </motion.div>
