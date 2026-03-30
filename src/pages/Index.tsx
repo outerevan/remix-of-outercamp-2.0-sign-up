@@ -35,7 +35,7 @@ const features = [
   title: "Bath House",
   desc: "Communal spa with sauna, hot tub, cold plunge, and outdoor showers",
   iconColor: "text-primary",
-  hoverBg: "group-hover:bg-primary"
+  hoverBg: "group-hover:bg-water"
 },
 {
   icon: Flame,
@@ -198,7 +198,7 @@ const Index = () => {
               className="font-sans text-lg text-muted-foreground leading-relaxed space-y-5">
 
               <p>
-                Outercamp 2.0 expands from 5 off-grid yurts to an 11-unit eco-retreat and gathering venue in the Blue Ridge Mountains.
+                Outercamp 2.0 expands from 5 off-grid yurts to an 11-unit eco-retreat and glamping venue in the Blue Ridge Mountains.
               </p>
               <p>But what we're really building is space:</p>
               <ul className="space-y-2 text-foreground">

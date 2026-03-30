@@ -30,6 +30,7 @@ export default {
         warm: "hsl(var(--warm))",
         earth: "hsl(var(--earth))",
         clay: "hsl(var(--clay))",
+        water: "hsl(var(--water))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
