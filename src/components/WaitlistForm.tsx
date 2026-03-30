@@ -21,7 +21,7 @@ const QUESTIONS = [
   },
   {
     key: "crowdfunding_interest" as const,
-    label: "Would you like to be notified if we open crowdfunding opportunities?",
+    label: "Would you like to be notified if we open community investment?",
     multi: false,
     options: ["Yes", "Maybe", "No"],
   },

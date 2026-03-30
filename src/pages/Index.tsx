@@ -55,7 +55,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* ─── SECTION 1: HERO ─── */}
-      <section id="hero" className="relative min-h-[100svh] flex items-start md:items-center justify-center overflow-hidden">
+      <section id="hero" className="relative min-h-[100dvh] flex items-start md:items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img
             src={heroImage}
@@ -66,7 +66,7 @@ const Index = () => {
           <div className="absolute inset-0 bg-foreground/55" />
         </div>
 
-        <div className="relative z-10 text-center px-6 pt-[6.5rem] md:pt-20 max-w-3xl mx-auto">
+        <div className="relative z-10 text-center px-6 pt-[6.5rem] pb-10 md:pt-20 md:pb-0 max-w-3xl mx-auto">
           <motion.h1
             initial="hidden"
             animate="visible"
@@ -98,8 +98,8 @@ const Index = () => {
             animate="visible"
             custom={1.8}
             variants={fadeUp}
-            className="hidden md:flex items-center justify-center gap-3 font-sans text-xs text-sand/60 tracking-wide mb-3">
-            <span>✓ First booking access</span>
+            className="flex items-center justify-center gap-2 font-sans text-[10px] md:text-xs text-sand/60 tracking-wide mb-3 whitespace-nowrap">
+            <span>✓ Early booking</span>
             <span className="text-sand/30">·</span>
             <span>✓ Founders' Sauna Socials</span>
             <span className="text-sand/30">·</span>
